@@ -35,7 +35,8 @@
       ::-webkit-scrollbar { width: 8px; height: 8px; }
       ::-webkit-scrollbar-track { background: #3E3436; }
       ::-webkit-scrollbar-thumb { background: #CD7F32; border-radius: 4px; }
-      ::-webkit-scrollbar-thumb:hover { background: #E6A35C; }     
+      ::-webkit-scrollbar-thumb:hover { background: #E6A35C; }
+      
       /* Vintage Grid Pattern - Dark Dusty Rose/Taupe version */
       .bg-grid-pattern {
         background-color: #3E3436; /* Màu tối hơi hồng/xanh lính */
@@ -43,13 +44,16 @@
           linear-gradient(#4E4446 1px, transparent 1px),
           linear-gradient(90deg, #4E4446 1px, transparent 1px);
         background-size: 40px 40px;
-      } 
+      }
+      
       .animate-fade-in-up {
         animation: fadeInUp 0.8s ease-out forwards;
-      }  
+      }
+      
       .animate-slide-up {
         animation: slideUp 0.5s ease-out forwards;
       }
+
       @keyframes fadeInUp {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
@@ -59,10 +63,22 @@
         from { opacity: 0; transform: translateY(40px); }
         to { opacity: 1; transform: translateY(0); }
       }
-    </style>  
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "docx": "https://esm.sh/docx@8.5.0?bundle"
+  }
+}
+</script>
 </head>
-  <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
+  <body class="bg-[#3E3436] text-[#E5E5E5] antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>

@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { SYSTEM_INSTRUCTION } from "../constants";
 import { AnalysisResult, QuestionFormat } from "../types";
 
-const apiKey = process.env.GEMINI_API_KEY || '';
+const apiKey = process.env.API_KEY || '';
 const ai = new GoogleGenAI({ apiKey });
 
 // Helper to convert file to base64
@@ -113,7 +113,7 @@ export const generateSimilarQuestion = async (
   documentFile?: File
 ): Promise<AnalysisResult[]> => {
   
-  const modelId = "gemini-2.5-flash"; 
+  const modelId = "gemini flash-lite"; 
 
   const parts: any[] = [];
 
